@@ -22,7 +22,6 @@ const createApp = count =>
 let count = 0
 let App = createApp(count)
 const $app = render(App)
-
 let $rootEl = mount($app, document.querySelector('#root'))
 
 setInterval(() => {
@@ -31,5 +30,4 @@ setInterval(() => {
   const patch = diff(App, virtualNewApp)
   $rootEl = patch($rootEl)
   App = virtualNewApp
-  // $rootEl = mount(render(createApp(count)), $rootEl)
 }, 1000)
