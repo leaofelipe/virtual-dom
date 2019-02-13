@@ -14,7 +14,7 @@ module.exports = ({ mode = 'development' }) => ({
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({ template: 'src/template.html' })],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: 8080
