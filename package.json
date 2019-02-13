@@ -1,0 +1,8 @@
+{
+  "name": "virtual-dom",
+  "version": "1.0.0",
+  "description": "My virtual DOM built from scratch",
+  "main": "index.js",
+  "author": "Felipe Leão",
+  "license": "MIT"
+}
