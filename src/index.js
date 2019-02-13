@@ -10,12 +10,14 @@ const createApp = count =>
       dataCount: count
     },
     children: [
-      String(count),
-      createElement('p', {
-        attrs: {
-          style: 'background: red; width: 10px; height: 10px;'
-        }
-      })
+      `Count: ${String(count)}`,
+      ...Array.from({ length: count }, () =>
+        createElement('p', {
+          attrs: {
+            style: 'background: red; width: 10px; height: 10px;'
+          }
+        })
+      )
     ]
   })
 
